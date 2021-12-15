@@ -1,0 +1,66 @@
+.defaultMargin {
+    margin: 2rem 14%;
+}
+
+.design {
+    position: relative;
+    .background {
+        height: 10rem;
+        width: 12rem;
+        background:  linear-gradient(to right, #c94b4b, #4b134f);
+        position: absolute;
+        z-index: -1;
+        left: -10px;
+        top: -8px;
+    }
+}
+
+.right {
+    .background {
+        top: auto;
+        left: auto;
+        right: -10px;
+        bottom: -8px;
+    }
+}
+
+.spring {
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+    .coil {
+        border-top: #c94b4b dashed 0.01rem;
+        width: 39.5%;
+    }
+    .bar {
+        width: 8rem;
+        height: 8rem;
+        background-image: url(/assets/Badge.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        animation: anim 25s ease-in-out infinite alternate;
+
+        @keyframes anim {
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+    }
+}
+
+.spring {
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+    .coil {
+        border-top: #c94b4b dashed 0.01rem;
+        width: 39.5%;
+    }
+    .bar1 {
+        width: 10px;
+        height: 7rem;
+        background: var(--gradient);
+    }
+}
